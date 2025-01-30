@@ -35,6 +35,7 @@ body{
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  overflow: hidden;
   
 }
 
@@ -62,9 +63,9 @@ body{
   position: absolute;
   top: 62px;
   right: 20px;
-  padding: 0px 66px;
+  padding: 0px 76px;
   border-top: 1px solid hsl(234, 17%, 12%);
-  opacity: 0.4;
+  opacity: 0.3;
 }
 
 .box-time h1{
@@ -89,3 +90,48 @@ body{
   margin: 0px 25px;
 }
 
+@media screen and (min-width:1000px) {
+  .LT-section{
+    height: 140vh;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .LT-section h1{
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .sp1{
+    position: absolute;
+    top: 32px;
+    left: 15px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 4px 2px;
+    background-color: hsl(234, 17%, 12%);
+  }
+  
+  .sp2{
+    position: absolute;
+    top: 32px;
+    right: 15px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 4px 2px;
+    background-color: hsl(234, 17%, 12%);
+  }
+  
+  .sp3{
+    position: absolute;
+    top: 36px;
+    right: 20px;
+    padding: 0px 76px;
+    border-top: 1px solid hsl(234, 17%, 12%);
+    opacity: 0.3;
+  }
+  .hih img{
+    width: 15px !important;
+  }
+
+}

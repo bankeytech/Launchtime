@@ -1,5 +1,5 @@
 const contime = () => {
-  const endDate  = new Date("May 30, 2025 04:30:00").getTime()
+  const endDate  = new Date("April 30, 2025 04:30:00").getTime()
   const now = new Date().getTime()
 
   const difference = endDate - now
