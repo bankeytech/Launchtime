@@ -3,6 +3,10 @@
 *{
   margin: 0;
   padding: 0;
+  font-family: "Red Hat Text", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
 
 body{
@@ -10,31 +14,78 @@ body{
 }
 
 .LT-section{
-  /* background-image: url(./images/bg-13.jpg) !important; */
-  
-  background: linear-gradient(
-    to bottom,
-    hsl(234, 17%, 12%) 0%,
-    hsl(235, 16%, 14%) 50%,
-    hsl(236, 21%, 26%) 100%
-  );
-  /* background-position: center;
-  background-size: cover; */
   height: 100vh;
+  width: 100%;  
+  background: url(/images/bg-stars.svg)repeat, linear-gradient(180deg, #1E1E2Aff, #201E2Bff, #1E1E28ff, #211D2Bff, 
+  #201E29ff, #241E2Cff, #211D2Bff, #231D2Bff, #201C2Aff) 0%;
+  background-size: cover;
+  background-position: center;
 }
 
-.wid{
-  width: 200px;
-  height: 200px;
-  text-align: center;
-  margin-left: 35px;
+.LT-section h1{
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 8px;
+}
+
+.box-time{
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  
 }
 
-.LT-it ol{
-  font-size: 22px;
-  
+.sp1{
+  position: absolute;
+  top: 58px;
+  left: 15px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 5px 3px;
+  background-color: hsl(234, 17%, 12%);
+}
+
+.sp2{
+  position: absolute;
+  top: 58px;
+  right: 15px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 5px 3px;
+  background-color: hsl(234, 17%, 12%);
+}
+
+.sp3{
+  position: absolute;
+  top: 62px;
+  right: 20px;
+  padding: 0px 66px;
+  border-top: 1px solid hsl(234, 17%, 12%);
+  opacity: 0.4;
+}
+
+.box-time h1{
+  font-size: 60px;
+  font-weight: bold;
+  background-color: hsl(236, 21%, 26%);
+  margin: 0px 15px;
+  border-radius: 8px;
+  padding: 25px;
+  color: hsl(345, 95%, 68%);
+  box-shadow: 0px 10px 2px hsl(234, 17%, 12%);
+}
+
+.box-time p{
+  letter-spacing: 5px;
+  color: hsl(237, 18%, 59%);
+  margin: 25px 0px;
+  font-size: 12px;
+}
+
+.imgh {
+  margin: 0px 25px;
 }
 

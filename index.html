@@ -10,31 +10,54 @@
   integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-  <section class="LT-section d-flex flex-column justify-content-center align-items-center">
-    <h2 class="fs-2">We're launching soon</h2>
+  <section class="LT-section d-flex flex-column justify-content-center align-items-center position-relative">
+    <h1 class="my-4">WE'RE LAUNCHING SOON</h1>
 
-    <div>
-      <div class="d-flex justify-content-between align-items-center">
-        <div class="rounded-4 bg-secondary-subtle wid"><h1>00</h1></div>
-        <div class="rounded-4 bg-success wid"><h1>00</h1></div>
-        <div class="rounded-4 bg-primary-subtle wid"><h1>00</h1></div>
-        <div class="rounded-4 bg-warning-subtle wid"><h1>00</h1></div>
+    <div class="contime d-flex justify-content-center align-items-center flex-wrap my-5">
+
+      <div class="box-time">
+        <span class="z-2 sp1"></span>
+        <h1 id="days">{time}</h1>
+        <p>DAYS</p>
+        <span class="z-2 sp3"></span>
+        <span class="z-2 sp2"></span>
       </div>
-      <ul class="d-flex justify-content-between align-items-center LT-it">
-        <ol class="mx-5">DAYS</ol>
-        <ol class="mx-5">HOURS</ol>
-        <ol class="mx-5">MINUTES</ol>
-        <ol class="mx-5">SECONDS</ol>
-      </ul>
+
+      <div class="box-time">
+        <span class="z-2 sp1"></span>
+        <h1 id="hours">{time}</h1>
+        <p>HOURS</p>
+        <span class="z-2 sp3"></span>
+        <span class="z-2 sp2"></span>
+      </div>
+
+      <div class="box-time">
+        <span class="z-2 sp1"></span>
+        <h1 id="minutes">{time}</h1>
+        <p>MINUTES</p>
+        <span class="z-2 sp3"></span>
+        <span class="z-2 sp2"></span>
+      </div>
+
+      <div class="box-time">
+        <span class="z-2 sp1"></span>
+        <h1 id="seconds">{time}</h1>
+        <p>SECONDS</p>
+        <span class="z-2 sp3"></span>
+        <span class="z-2 sp2"></span>
+      </div>
+
     </div>
 
-    <div class="" style="margin-bottom: -75px; margin-top: 40px;">
-      <img src="./images/pattern-hills.svg" style="width:100%;">
-      <div class="d-flex justify-content-center" style="margin-top: -90px !important;">
+    
+    <div class="z-2 position-absolute bottom-0 my-5  d-flex justify-content-center">
       <img src="./images/icon-facebook.svg" >
-      <img src="./images/icon-pinterest.svg">
+      <img src="./images/icon-pinterest.svg" class="imgh">
       <img src="./images/icon-instagram.svg">
-      </div>
+    </div>
+      
+    <div class="position-absolute bottom-0">
+      <img src="./images/pattern-hills.svg" style="width:100%;">
     </div>
   </section>
 
